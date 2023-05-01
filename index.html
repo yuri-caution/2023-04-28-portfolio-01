@@ -14,24 +14,25 @@
         <div class="header">
             <div class="logo"><a href="#">홍길동</a></div>
             <ul class="gnb">
-                <li><a href="#">소개</a></li>
-                <li><a href="#">작업</a></li>
-                <li><a href="#">연락하기</a></li>
+                <li><a href="#"><span>소개</span></a></li>
+                <li><a href="#"><span>작업</span></a></li>
+                <li><a href="#"><span>연락하기</span> </a></li>
             </ul>
             <div class="bars"><i class="xi-bars"></i></div>
         </div>
 
-        <div class="container">
-            <div class="hero">
-                <div class="text_box">
-                    <h4>Branding | Image making</h4>
-                    <h2>시들어<br> 방황하였으며</h2>
-                    <p>노루, 위에 무덤 새겨지는 마디씩 북간도에 아스라히 못 불러 <br> 듯합니다. 쉬이 풀이 밤이 않은 거외다</p>
-                </div>
-                <div class="photo">
-                    <img src="./images/photo.jpg" alt="인물사진">
-                </div>
+        <div class="hero">
+            <div class="text_box">
+                <h4>Branding | Image making</h4>
+                <h2>시들어<br> 방황하였으며</h2>
+                <p>노루, 위에 무덤 새겨지는 마디씩 북간도에 아스라히 못 불러 듯합니다. 쉬이 풀이 밤이 않은 거외다</p>
             </div>
+            <div class="photo">
+                <img src="./images/photo.jpg" alt="인물사진">
+            </div>
+        </div>
+
+        <div class="container">
     
             <div class="skills">
                 <div class="item">
@@ -58,6 +59,7 @@
             </div>
     
             <div class="works">
+                <h2>포트폴리오</h2>
                 <ul>
                     <li>
                         <div class="photo">
@@ -119,5 +121,18 @@
         </div>
 
     </div>
+
+    <script>
+        const btn = document.querySelector('.bars i')
+        const gnb = document.querySelector('.gnb')
+
+        btn.addEventListener('click', function(){
+            gnb.classList.toggle('active')
+            this.classList.toggle('xi-close')
+        })
+
+        // console.log(btn)
+        // console.log(gnb)
+    </script>
 </body>
 </html>
