@@ -40,6 +40,7 @@ body {
 .logo {
     font-size: 20px;
     font-weight: 700;
+    padding-left: 10px;
     position: relative;
 }
 
@@ -47,7 +48,7 @@ body {
     content: '';
     position: absolute;
     top: -3px;
-    left: -15px;
+    left: -5px;
     width: 37px;
     height: 37px;
     background-color: #ccc;
@@ -251,7 +252,7 @@ body {
         display: block;
         position: fixed;
         top: 16px;
-        right: 50px;
+        right: 20px;
         font-size: 32px;
         z-index: 1;
     }
